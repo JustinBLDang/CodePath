@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Assignment 1 - Flix' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Assignment 1 - Flix
+  pod "AlamofireImage"
+
+  target 'Assignment 1 - FlixTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Assignment 1 - FlixUITests' do
+    # Pods for testing
+  end
+
+end
