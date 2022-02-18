@@ -54,6 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
+        cell.synopsisLabel.sizeToFit()
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
@@ -63,7 +64,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return cell
     }
-
-
+    
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?){
+        // Get the new view controller using segue.destination
+        // Pass the selected object to the new view controller
+        
+        print("Loading up details screen.")
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        // Pass the selected Movie to the details view controller
+        
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
