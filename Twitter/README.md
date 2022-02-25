@@ -23,4 +23,5 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![twitter userstories showcase](https://user-images.githubusercontent.com/57662868/155630698-68b7cc17-5a06-420f-8e44-02466cf41faa.gif)
+![twitter userstory update](https://user-images.githubusercontent.com/57662868/155773523-eb33a831-f48d-49c6-917e-ba71ad5d17b5.gif)
+
