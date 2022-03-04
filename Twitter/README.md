@@ -48,3 +48,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![twitter userstory update](https://user-images.githubusercontent.com/57662868/155773713-da1f6671-be0c-4e8f-a5e0-36abb008710b.gif)
+
+
